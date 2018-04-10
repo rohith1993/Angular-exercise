@@ -1,0 +1,9 @@
+C:\Users\Renuka\source\repos\AngularExercise.Web\AngularExercise.Web\bin\AngularExercise.Web.dll.config
+C:\Users\Renuka\source\repos\AngularExercise.Web\AngularExercise.Web\bin\AngularExercise.Web.dll
+C:\Users\Renuka\source\repos\AngularExercise.Web\AngularExercise.Web\bin\AngularExercise.Web.pdb
+C:\Users\Renuka\source\repos\AngularExercise.Web\AngularExercise.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Renuka\source\repos\AngularExercise.Web\AngularExercise.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Renuka\source\repos\AngularExercise.Web\AngularExercise.Web\obj\Debug\AngularExercise.Web.csprojResolveAssemblyReference.cache
+C:\Users\Renuka\source\repos\AngularExercise.Web\AngularExercise.Web\obj\Debug\AngularExercise.Web.csproj.CoreCompileInputs.cache
+C:\Users\Renuka\source\repos\AngularExercise.Web\AngularExercise.Web\obj\Debug\AngularExercise.Web.dll
+C:\Users\Renuka\source\repos\AngularExercise.Web\AngularExercise.Web\obj\Debug\AngularExercise.Web.pdb

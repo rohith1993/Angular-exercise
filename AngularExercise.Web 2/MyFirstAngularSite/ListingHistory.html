@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html ng-app="itsApp">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+<body ng-controller="listingController">
+	<h1>Listing History page</h1>
+	<div ng-show="isHidden">
+		<button ng-click="viewListingHistory()"> View Listing History </button>
+	</div>
+
+		<div ng-show="!isHidden">
+			<form>
+				<p>Search for Listings <input type="text" ng-model="search"></p>
+			</form>
+			<p>
+				Here are your current Listing History for accoung id {{bidding.accountId}}
+				<table style="width:600px;table-layout:fixed;word-wrap:break-word;" ng-repeat="listing in listings | filter:search">
+					<tr>
+						<th>Id</th>
+						<th>Description</th>
+						<th>Image</th>
+						<th>PriceBuy</th>
+						<th>Category</th>
+						<th>startDate</th>
+					</tr>
+
+					<tr>
+						<td>{{listing.id}}</td>
+						<td>{{listing.description}}</td>
+						<td><img ng-src="data:image/JPEG;base64,{{listing.image}}"></td>
+						<td>{{listing.priceBuy}}</td>
+						<td>{{listing.category}}</td>
+						<td>{{listing.startDate}}</td>
+					</tr>
+				</table>
+				<div ng-show="errorMessage">
+					error: {{errorMessage | json}}
+				</div>
+				<button ng-click="hide()"> Hide Listing History </button>
+		</div>
+
+
+
+		<script src="app/myApp.js"></script>
+		<script src="app/listing/listingModule.js"></script>
+		<script src="app/listing/listingController.js"></script>
+</body>
+</html>

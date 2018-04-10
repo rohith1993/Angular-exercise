@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="itsApp">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+<body ng-controller="biddingController">
+	<h1>Bid History page</h1>
+	<div ng-show="isHidden">
+		<button ng-click="viewBiddingHistory()"> Bid  History </button>
+	</div>
+
+
+
+	<div ng-show="!isHidden">
+		<form>
+			<p>Search for Bid  <input type="text" ng-model="search"></p>
+		</form>
+		<p>
+			Here are your current Bid History for accoung id {{bidding.accountId}}
+			<table style="width:600px;table-layout:fixed;word-wrap:break-word;" ng-repeat="bidding in biddings | filter:search">
+				<tr>
+					<th>Id</th>
+					<th>BidId</th>
+					<th>ItemId</th>
+					<th>AccountId</th>					
+				</tr>
+
+				<tr>
+					<td>{{bidding.id}}</td>
+					<td>{{bidding.bidId}}</td>					
+					<td>{{bidding.itemId}}</td>
+					<td>{{bidding.accountId}}</td>
+				</tr>
+			</table>
+			<div ng-show="errorMessage">
+				error: {{errorMessage | json}}
+			</div>
+			<button ng-click="hide()"> Hide Bidding History </button>
+	</div>
+
+
+
+	<script src="app/myApp.js"></script>
+	<script src="app/listing/listingModule.js"></script>
+	<script src="app/listing/biddingController.js"></script>
+</body>
+</html>
